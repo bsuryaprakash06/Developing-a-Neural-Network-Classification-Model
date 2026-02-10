@@ -11,33 +11,28 @@ In their existing market, the sales team has classified all customers into 4 seg
 You are required to help the manager to predict the right group of the new customers.
 
 ## Neural Network Model
-Include the neural network model diagram.
-
-## DESIGN STEPS
-### STEP 1: 
-
-Write your own steps
-
-### STEP 2: 
+<img width="1025" height="814" alt="image" src="https://github.com/user-attachments/assets/ce327d39-7487-4d25-9d0e-1e1c0741dda8" />
 
 
+## Algorithm: Customer Segmentation Classification using Neural Network
 
-### STEP 3: 
+**Step 1: Data Loading and Preprocessing**  
+Load the dataset, remove unnecessary columns (ID), handle missing values, and encode categorical variables and target labels using label encoding.
 
+**Step 2: Feature Selection and Splitting**  
+Separate the dataset into input features (X) and target variable (y), then split the dataset into training and testing sets.
 
+**Step 3: Feature Scaling and Tensor Conversion**  
+Normalize the feature values using standard scaling and convert the processed data into PyTorch tensors and DataLoaders.
 
-### STEP 4: 
+**Step 4: Model Definition**  
+Define a neural network model consisting of multiple fully connected layers with ReLU activation functions and an output layer for classification.
 
+**Step 5: Model Training**  
+Train the neural network using CrossEntropyLoss as the loss function and Adam optimizer by performing forward propagation, loss computation, backpropagation, and weight updates for a specified number of epochs.
 
-
-### STEP 5: 
-
-
-
-### STEP 6: 
-
-
-
+**Step 6: Model Evaluation and Prediction**  
+Evaluate the trained model on the test dataset by computing accuracy, confusion matrix, and classification report, and perform predictions for sample inputs.
 
 
 ## PROGRAM
@@ -174,37 +169,24 @@ print("Name: Surya Prakash B")
 print("Register No: 212224230281")
 print(f'Predicted class for sample input: {predicted_class_label}')
 print(f'Actual class for sample input: {label_encoder.inverse_transform([y_test[12].item()])[0]}')
-class PeopleClassifier(nn.Module):
-    def __init__(self, input_size):
-        super(PeopleClassifier, self).__init__()
-        #Include your code here
-
-
-
-    def forward(self, x):
-        #Include your code here
-        
-# Initialize the Model, Loss Function, and Optimizer
-
-def train_model(model, train_loader, criterion, optimizer, epochs):
-    #Include your code here
 
 ```
 
 ### Dataset Information
-Include screenshot of the dataset.
-
-### OUTPUT
+<img width="887" height="192" alt="image" src="https://github.com/user-attachments/assets/9db2f15c-09ea-4e11-a7f0-443245888669" />
 
 ## Confusion Matrix
-
-Include confusion matrix here
+<img width="539" height="455" alt="image" src="https://github.com/user-attachments/assets/6fdb869c-70c7-4e80-b7fb-0bde2369dec3" />
 
 ## Classification Report
-Include classification report here
+<img width="1379" height="342" alt="image" src="https://github.com/user-attachments/assets/0cd96eb6-420c-4ae1-8775-f168e4ff4d24" />
+
+### OUTPUT
+<img width="1404" height="29" alt="image" src="https://github.com/user-attachments/assets/2e0c45be-95fc-4259-8812-973d223d4b0f" />
 
 ### New Sample Data Prediction
-Include your sample input and output here
+<img width="1407" height="73" alt="image" src="https://github.com/user-attachments/assets/14599ac2-eda0-4e20-879f-c8b181940923" />
 
-## RESULT
-Include your result here
+## Result
+The implemented neural network model successfully classified customers into their respective segmentation categories with satisfactory prediction accuracy.
+
